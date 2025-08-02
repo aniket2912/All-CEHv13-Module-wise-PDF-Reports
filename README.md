@@ -108,7 +108,7 @@ This repository is maintained to:
 ## ✍️ Author
 
 - **Name:** Aniket Sunil Pagare  
-- **Email:** aniketpagare1411@gmail.com  
+- **Email:** aniketpagare2002@gmail.com  
 - **LinkedIn:** [linkedin.com/in/aniket8757](https://linkedin.com/in/aniket8757)
 
 ---

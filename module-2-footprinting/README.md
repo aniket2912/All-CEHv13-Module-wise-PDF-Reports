@@ -1,8 +1,7 @@
-12/03/2025 
 
-footprinting 
+Footprinting 
 
-social media footprinting...
+1. social media footprinting...
 
 website-: osint framework-social networks- facebook ,Instagram,linkdin and so all
 
@@ -30,7 +29,7 @@ website(GUI)
 website-: kloth dns .com 
 
 
-Email footprinting -:
+4.Email footprinting -:
 APK -: GSA Email spider- 
 paste url (not every url )
 website -: https://emkei.cz/ for fake email sender
@@ -38,4 +37,3 @@ website-: similar: https://emkei.cz/
 website -: related: https://emkei.cz/
 
 website -: mxtoolbox for email id original or fake
-

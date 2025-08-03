@@ -1,6 +1,6 @@
 <!-- Banner Image -->
 <p align="center">
-  <img src="https://raw.githubusercontent.com/aniket8757/CEHv13-Modules/main/banner.jpg" alt="CEHv13 Modules Banner" width="100%">
+  <img src="https://raw.githubusercontent.com/aniket8757/All-CEHv13-Module-wise-PDF-Reports/refs/heads/main/cehv13-banner.png?token=GHSAT0AAAAAADH5TKLPCNEP6DS6XFZZSFGI2EPGMHA" alt="CEHv13 Modules Banner" width="100%">
 </p>
 
 <h1 align="center">📁 CEHv13 Modules - PDF Report Collection</h1>

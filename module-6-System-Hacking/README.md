@@ -81,22 +81,21 @@ Tools: Meterpreter, Auditpol, Winzapper
 
 🔸 3. Key Tools Used in System Hacking
 Tool	           Purpose
-Mimikatz ---	Password dumping & pass-the-hash
-Cain & Abel ---	Cracking Windows passwords
-Metasploit ---	Exploiting vulnerabilities
-Netcat ---	Creating reverse shells/backdoors
-Nmap ---	Discovering open ports/services
-John the --- Ripper	Password brute force
-PsExec ---	Remote code execution
+1) Mimikatz ---	Password dumping & pass-the-hash.
+2) Cain & Abel ---	Cracking Windows passwords.
+3) Metasploit ---	Exploiting vulnerabilities.
+4) Netcat ---	Creating reverse shells/backdoors.
+5) Nmap ---	Discovering open ports/services.
+6) John the --- Ripper	Password brute force.
+7) PsExec ---	Remote code execution.
 
 🔸 4. Defensive Measures
-Technique	Description
-Patch Management 
-Keep OS and software up-to-date
-Account Lockout Policies
-Prevent brute-force attacks
-Multi-Factor Authentication	Hardens login process
-IDS/IPS Systems	Detect intrusion
-Event Log Monitoring	Detect unauthorized access
-
-🔸 
+1) Technique	Description.
+2) Patch Management .
+3) Keep OS and software up-to-date.
+4) Account Lockout Policies.
+5) Prevent brute-force attacks.
+6) Multi-Factor Authentication.
+7) Hardens login process.
+8) IDS/IPS Systems	Detect intrusion.
+9) Event Log Monitoring	Detect unauthorized access.

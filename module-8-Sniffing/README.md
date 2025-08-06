@@ -3,7 +3,7 @@
 Sniffing is the process of monitoring and capturing network packets to analyze the data transmitted over a network.
 It can be legitimate (network troubleshooting, performance monitoring) or malicious (stealing sensitive data like credentials).
 
-Types of Sniffing
+   Types of Sniffing
    1) Passive Sniffing ---
       i) Listens to traffic without modifying it.
      ii) Works in a hub-based network or using promiscuous mode.

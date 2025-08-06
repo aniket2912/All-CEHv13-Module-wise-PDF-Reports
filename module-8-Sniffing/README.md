@@ -30,21 +30,21 @@ Example: Wireshark capture of broadcast traffic.
        g) SNMP v1 & v2
        h) DNS (queries in plain text)
 
-  2) Secure alternatives:--
+   2) Secure alternatives:--
       --> HTTPS, SFTP, SSH, SMTPS, POP3S, SNMPv3
 
 4. Active Sniffing Techniques
-1) MAC Flooding --> Overloads switch CAM table → Switch acts like a hub.
-Tools: macof.
+   1) MAC Flooding --> Overloads switch CAM table → Switch acts like a hub.
+      Tools: macof.
 
-2) ARP Poisoning / ARP Spoofing --> Sends fake ARP replies to associate attacker MAC with victim’s IP.
-Tools: Ettercap, Cain & Abel, arpspoof.
+   2) ARP Poisoning / ARP Spoofing --> Sends fake ARP replies to associate attacker MAC with victim’s IP.
+      Tools: Ettercap, Cain & Abel, arpspoof.
 
-3) DHCP Spoofing --> Rogue DHCP server assigns attacker-controlled IP settings.
+   3) DHCP Spoofing --> Rogue DHCP server assigns attacker-controlled IP settings.
 
-4) DNS Poisoning --> Redirects victim to malicious sites by spoofing DNS replies.
+   4) DNS Poisoning --> Redirects victim to malicious sites by spoofing DNS replies.
 
-5) MITM (Man-in-the-Middle) via Sniffing --> Intercepts and modifies traffic between two parties.
+   5) MITM (Man-in-the-Middle) via Sniffing --> Intercepts and modifies traffic between two parties.
 
 5. Sniffing Tools
    1) Wireshark – Deep packet inspection and protocol analysis.

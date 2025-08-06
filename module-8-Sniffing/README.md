@@ -4,15 +4,15 @@ Sniffing is the process of monitoring and capturing network packets to analyze t
 It can be legitimate (network troubleshooting, performance monitoring) or malicious (stealing sensitive data like credentials).
 
 Types of Sniffing
-1) Passive Sniffing ---
-   i) Listens to traffic without modifying it.
-   ii) Works in a hub-based network or using promiscuous mode.
-Example: Wireshark capture of broadcast traffic.
+   1) Passive Sniffing ---
+      i) Listens to traffic without modifying it.
+     ii) Works in a hub-based network or using promiscuous mode.
+         Example: Wireshark capture of broadcast traffic.
 
-2) Active Sniffing ---
-   i) Interferes with network traffic to redirect it to the attacker’s machine.
-   ii) Works in switch-based networks.
-   iii) Techniques include ARP Poisoning, MAC Flooding, and DHCP Spoofing.
+   2) Active Sniffing ---
+      i) Interferes with network traffic to redirect it to the attacker’s machine.
+      ii) Works in switch-based networks.
+      iii) Techniques include ARP Poisoning, MAC Flooding, and DHCP Spoofing.
 
 2. How Sniffing Works
    i) Network Interface Card (NIC) is set to Promiscuous Mode to capture all packets.

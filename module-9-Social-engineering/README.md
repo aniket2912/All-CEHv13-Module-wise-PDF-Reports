@@ -1,8 +1,9 @@
 
-🔐 What is Social Engineering?
+🔐 What is Social Engineering? --- 
 Social Engineering is the art of manipulating people so they give up confidential information. It exploits human psychology rather than technical hacking techniques to gain access to systems, networks, or physical locations, or for financial gain.
 
 🎯 Primary Goal ---  The main objective is to trick individuals into revealing sensitive data like:
+   
      1) Passwords
      2) Bank information
      3) Access credentials

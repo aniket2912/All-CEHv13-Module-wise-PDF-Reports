@@ -11,7 +11,7 @@ Session Hijacking – Complete Guide
        2) Session ID: A unique token (usually stored in cookies, URL parameters, or HTTP headers) used to track the user’s session.
        3) Session Management: The process of creating, maintaining, and terminating sessions securely.
 
-When a user logs in:
+   When a user logs in:
 
        1) They provide valid credentials.
        2) The server creates a session ID.

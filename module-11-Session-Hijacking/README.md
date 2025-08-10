@@ -13,11 +13,11 @@ Session Hijacking – Complete Guide
 
 When a user logs in:
 
-    1) They provide valid credentials.
-    2) The server creates a session ID.
-    3) The session ID is sent to the client.
-    4) The client sends the ID with every request.
-    5) If the session ID is stolen, the attacker bypasses authentication.
+       1) They provide valid credentials.
+       2) The server creates a session ID.
+       3) The session ID is sent to the client.
+       4) The client sends the ID with every request.
+       5) If the session ID is stolen, the attacker bypasses authentication.
 
 3. Types of Session Hijacking
 

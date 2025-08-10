@@ -2,8 +2,8 @@ Session Hijacking – Complete Guide
 
 1. What is Session Hijacking?
 
-       Session hijacking is a cyberattack where an attacker takes over an active communication         session between two systems—typically a user and a web application—by stealing or               predicting the session ID.
-       Once successful, the attacker can impersonate the legitimate user and perform actions as        them without needing to log in.
+       Session hijacking is a cyberattack where an attacker takes over an active communication session between two systems—typically a user and a web application—by stealing or predicting the session ID.
+       Once successful, the attacker can impersonate the legitimate user and perform actions as them without needing to log in.
 
 2. How Sessions Work
 
@@ -58,7 +58,7 @@ When a user logs in:
        1) Preparation – Set up sniffing or interception tools.
        2) Session ID Capture – Extract the session token from cookies, headers, or URLs.
        3) Session Injection – Use the stolen session ID to craft requests.
-       4) Privilege Escalation – Attempt actions as the victim (view data, perform                        transactions).
+       4) Privilege Escalation – Attempt actions as the victim (view data, perform transactions).
        5) Maintaining Access – Possibly create a backdoor or persist with stolen cookies.
 
 6. Tools for Session Hijacking

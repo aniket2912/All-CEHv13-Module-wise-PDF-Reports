@@ -1,7 +1,8 @@
 Firewall – Complete Guide
 
      A firewall is a security device (hardware, software, or both) that monitors and controls incoming and 
-     outgoing network traffic based on predefined security rules. It acts as a barrier between a trusted internal network and untrusted external networks (like the internet).
+     outgoing network traffic based on predefined security rules. It acts as a barrier between a trusted
+     internal network and untrusted external networks (like the internet).
 
 1. Objectives of a Firewall
 

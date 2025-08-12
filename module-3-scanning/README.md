@@ -88,6 +88,8 @@ Practical scanning commands:
 
       nc 192.168.1.10 80
 
+---
+
 📊 Interpreting Scan Results
 Open Ports → Potential entry points.
 
@@ -96,6 +98,8 @@ Service Versions → Can be cross-checked with CVE databases.
 OS Information → Guides exploit selection.
 
 Closed/Filtered Ports → Indicate firewall filtering or blocked services.
+
+---
 
 🛡️ Defensive Countermeasures
 Configure firewalls to block unused ports.
@@ -107,6 +111,8 @@ Use IDS/IPS to detect and block scanning.
 Limit ICMP responses to prevent ping sweeps.
 
 Apply network segmentation.
+
+---
 
 📄 Reporting & Documentation
 When documenting scanning results:
@@ -124,6 +130,8 @@ Service versions and OS details.
 Screenshots or saved logs.
 
 Potential vulnerabilities linked to findings.
+
+---
 
 ⚠️ Disclaimer
 This repository is for educational and authorized penetration testing only.

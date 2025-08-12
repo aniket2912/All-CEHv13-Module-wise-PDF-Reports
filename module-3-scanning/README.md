@@ -61,36 +61,36 @@ Practical scanning commands:
   
       nmap -sn 192.168.1.0/24
 
-- **Scan a specific host:
+- **Scan a specific host**:
 
       nmap 192.168.1.10
 
-- **Scan Multiple Hosts
+- **Scan Multiple Hosts**:
 
       nmap 192.168.1.10 192.168.1.11
 
-- **Full Port Scan
+- **Full Port Scan**:
 
       nmap -p 1-65535 192.168.1.10
 
-- **OS Detection
+- **OS Detection**:
 
       nmap -O 192.168.1.10
 
-- **Vulnerability Scanning via NSE
+- **Vulnerability Scanning via NSE**:
 
       nmap --script vuln 192.168.1.10
-- **Fast Scan with Masscan
+- **Fast Scan with Masscan**:
 
       masscan -p1-65535 192.168.1.0/24 --rate=1000
 
-- **Banner Grabbing with Netcat
+- **Banner Grabbing with Netcat**:
 
       nc 192.168.1.10 80
 
 ---
 
-📊 Interpreting Scan Results
+## 📊 Interpreting Scan Results
 Open Ports → Potential entry points.
 
 Service Versions → Can be cross-checked with CVE databases.
@@ -101,7 +101,7 @@ Closed/Filtered Ports → Indicate firewall filtering or blocked services.
 
 ---
 
-🛡️ Defensive Countermeasures
+## 🛡️ Defensive Countermeasures
 Configure firewalls to block unused ports.
 
 Disable unnecessary services.
@@ -114,7 +114,7 @@ Apply network segmentation.
 
 ---
 
-📄 Reporting & Documentation
+## 📄 Reporting & Documentation
 When documenting scanning results:
 
 Date/time of scan.
@@ -133,5 +133,5 @@ Potential vulnerabilities linked to findings.
 
 ---
 
-⚠️ Disclaimer
+## ⚠️ Disclaimer
 This repository is for educational and authorized penetration testing only.

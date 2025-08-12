@@ -44,4 +44,44 @@
 ## 🧪 Hands-on Labs
 ### **Lab 1: Perform a SYN Flood Attack (Hping3)**
 - Use `hping3` to send rapid TCP SYN requests.
-- Monitor ser
+- Monitor server response and CPU usage.
+
+### **Lab 2: UDP Flood Simulation**
+- Generate high UDP traffic to a target port.
+- Capture traffic with Wireshark.
+
+### **Lab 3: HTTP Flood with Slowloris**
+- Use Slowloris to exhaust web server connections.
+
+---
+
+## 🛡️ Prevention & Mitigation
+- Use **Firewalls & Intrusion Prevention Systems** to block malicious IPs.
+- Enable **Rate Limiting & Traffic Shaping**.
+- Deploy **DDoS Protection Services** (Cloudflare, Akamai, AWS Shield).
+- Implement **Redundant Infrastructure** (Load Balancers, CDNs).
+- Keep **OS and Applications Updated**.
+
+---
+
+## 🧰 Tools for DoS/DDoS Testing
+- **Hping3** – Network packet generator.
+- **LOIC/HOIC** – HTTP/UDP/TCP flooding tools.
+- **Slowloris** – Application layer DoS.
+- **Metasploit Auxiliary Modules** – DoS simulations.
+- **Wireshark** – Monitoring and analysis.
+
+---
+
+## 📄 Reporting & Documentation
+When documenting a DoS/DDoS test:
+- Include target details (with permission).
+- Describe attack type and tools used.
+- Note impact metrics (CPU, memory, uptime).
+- Recommend mitigation strategies.
+
+---
+
+## ⚠️ Disclaimer
+This repository is for **educational and authorized penetration testing only**.  
+DoS/DDoS attacks against systems without permission are **illegal** and punishable under cybercrime laws.

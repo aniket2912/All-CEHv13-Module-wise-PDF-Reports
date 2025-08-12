@@ -1,112 +1,75 @@
-Nmap commands and switches
+# Scanning
 
-HOST DISCOVERY
+## 📌 Introduction
+**Scanning** is the second phase of ethical hacking, following reconnaissance.  
+It involves actively interacting with the target network or system to identify live hosts, open ports, services, and vulnerabilities.  
+The main purpose is to create a network map that will guide further enumeration and exploitation activities.
 
--sn -- no port scanning
--Pn -- disable ICMP echo request
--PS -- TCP SYN packet
--PA -- TCP ACK
--PU -- UDP 
--PE -- ICMP ECHO
--PP -- Timestamp
--PM -- net mask request
--n  -- disable dns resolution
+---
 
---traceroute -- trace hop path to each host 
+## 🎯 Objectives of Scanning
+- Identify live hosts in a network.
+- Discover open ports and running services.
+- Detect operating systems and service versions.
+- Map network topology.
+- Identify potential vulnerabilities.
+- Gather intelligence for enumeration and exploitation.
 
+---
 
-SCAN TECHNIQUES
+## 🔍 Types of Scanning
+1. **Port Scanning**
+   - Detects open and closed ports on a target system.
+2. **Network Scanning**
+   - Finds active hosts and devices on a network.
+3. **Vulnerability Scanning**
+   - Checks for known security flaws in services and systems.
+4. **Service Version Detection**
+   - Identifies specific versions of running services.
+5. **OS Fingerprinting**
+   - Determines the operating system of a target host.
 
--sS -- send SYK packet to target ( two way handshake ) or half scanning
--ST -- send TCP packets (three way handshake) or full scanning
--sA -- send ACK packet
--sW -- for windows 
--sM -- maimon scans
--sU -- scan UDP ports
--SN -- send null packet
--sF -- send FIN packet
--sX -- xmass scan , sends at a time three packets (FIN , PSH, RST)
+---
 
+## 🛠️ Scanning Methodology
+1. **Preparation**
+   - Define scope and permissions.
+2. **Host Discovery**
+   - Identify active systems (ping sweep, ARP scan).
+3. **Port Scanning**
+   - Use tools to check for open, closed, or filtered ports.
+4. **Service Enumeration**
+   - Identify the type and version of running services.
+5. **Vulnerability Mapping**
+   - Match detected services to known vulnerabilities.
+6. **Reporting**
+   - Document findings for further penetration testing.
 
-PORT  SPECIFICATION AND SCAN ORDER 
+---
 
--p -- FOR PORT SCAN AND ALSO SCAN A SPECIFIC PORT LIKE -p21 ,-p22
---excluded-ports -- excluded the specified port from scanning
--F -- fast scanning , scan first 100 ports
--r -- scan port sequantually
---top-ports -- scan most common ports
+## 🧰 Common Scanning Tools
+- **Nmap** – Port scanning, OS detection, and service versioning.
+- **Masscan** – High-speed port scanning.
+- **Netcat** – Port scanning and banner grabbing.
+- **Unicornscan** – Asynchronous network scanning.
+- **Angry IP Scanner** – GUI-based network scanning.
+- **Zenmap** – Nmap’s graphical interface.
+- **Nessus/OpenVAS** – Vulnerability scanning.
 
+---
 
-SERVICE VERSION DETECTION 
+## 📊 Types of Nmap Scans
+- **TCP Connect Scan** (`-sT`) – Full TCP connection.
+- **SYN Scan** (`-sS`) – Stealth scan without completing handshake.
+- **UDP Scan** (`-sU`) – Checks UDP ports.
+- **Service Version Detection** (`-sV`) – Detects application versions.
+- **OS Detection** (`-O`) – Identifies operating system.
+- **Aggressive Scan** (`-A`) – Enables OS detection, version detection, scripts, and traceroute.
 
--sV -- service version detetction ...show running ports versions
+---
 
+## 🧪 Practical Scanning Labs
 
-SCRIPTS SCANS
-
--sC -- default script
---scripts = files and script categories
-
-
-OS DETECTIONS 
-
--O -- to checks operating system of target system
---osscan-limit : limit os detection to promising targets
---osscan-guess -- guess OS more aggressively
-
-
-TIMING AND PERFORMANCE
-
--T<0-5> -- Set time tamplate 
---scan-delay / --max-scan-delay --adjust delay between time
---min-rate <number> --sends packet no slower than <number> per second
---max-rate <number> -- sends packets no faster than <number> per second
-
-
-FIREWALL / IDS EVANSION AND SPOOFING
-
--f -- fragmentation ( divide a single packet into multiple pieces 
--D RND:<number> -- Decoy ( hide our real ip address and generate random ip address
--S < ip add > -- spoof source address 
--g / --source-port <port num> -- for post spoofing and hide our ip and generate duplicate
---spoof-mac -- 0 -- to replace source mac with random mac
-
-
-OUTPUT 
-
--oN -- save output in normal format
--oX -- save output in xml format
--oS -- greapable format
--oA -- output in the three major format at once
--v  -- verbocity 
-
-MISC 
-
--A -- perform os detection ,service version detection ,script scanning 
--V -- print version number
--h -- print help massage
-
-
-HPING3 Commads 
-hping3 -- genereate fake packets 
-smurf / land / broadcasting attack
-certend watch video
-
-man hping3 
-
-hping3 -S -- for SYN packet
--1 --icmp packet
--8 -- 
--a -- spoofing 
--c -- count
---rand-source  
-hping3 -1 162.241.216.11 -a 162.241.216.11 -p 80 --fast
-hping3 -8 1-1000 162.241.216.11 -S -X -- for scanning 1000 ports
-
-websites for attack --
-testfire.net
-certifiedhacker.com
-hackthissite.org
-hackerone.com
-
-
+### **Lab 1: Discover Live Hosts**
+```bash
+nmap -sn 192.168.1.0/24

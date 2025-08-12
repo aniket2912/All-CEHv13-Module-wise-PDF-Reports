@@ -1,101 +1,118 @@
-🔐 System Hacking: 
-🔸 1. What is System Hacking?
-System hacking is the process of exploiting system-level vulnerabilities to gain unauthorized access to computer systems. It is usually conducted in four main phases:
+# System Hacking
 
-Gaining Access
+## 📌 Introduction
+**System Hacking** is the process of exploiting vulnerabilities in an operating system to gain unauthorized access, escalate privileges, steal information, or control system resources.  
+It is a critical phase in penetration testing and ethical hacking to assess the security posture of target systems.
 
-Escalating Privileges
+---
 
-Maintaining Access
+## 🎯 Objectives of System Hacking
+- Gain access to the target system.
+- Escalate privileges for full administrative control.
+- Execute malicious or testing payloads.
+- Steal sensitive information (passwords, tokens, documents).
+- Create persistence for long-term access.
+- Cover tracks to avoid detection.
 
-Clearing Tracks
+---
 
-🔸 2. Phases of System Hacking
-📌 Phase 1: Gaining Access
-Objective: Crack user or admin credentials.
+## 🔑 Phases of System Hacking
+1. **Gaining Access**
+   - Exploiting system vulnerabilities.
+   - Using stolen credentials or brute force attacks.
+   - Exploiting misconfigured services.
 
-Password Cracking Techniques:
+2. **Privilege Escalation**
+   - Elevating privileges from a low-level user to administrator/root.
+   - Exploiting weak permissions or kernel vulnerabilities.
+   - Using UAC bypass techniques (Windows).
 
-Brute Force Attack
+3. **Executing Applications**
+   - Running malicious scripts, malware, or keyloggers.
+   - Leveraging remote command execution (RCE).
 
-Dictionary Attack
+4. **Maintaining Access**
+   - Creating backdoors.
+   - Modifying registry entries for persistence.
+   - Adding new hidden admin accounts.
 
-Rainbow Table Attack
+5. **Covering Tracks**
+   - Clearing logs and removing evidence.
+   - Using anti-forensic techniques.
 
-Hybrid Attack
+---
 
-Keylogger-based attack
+## 🧰 Tools for System Hacking
+- **Metasploit Framework** – Exploitation and post-exploitation.
+- **Mimikatz** – Credential dumping and privilege escalation.
+- **CrackMapExec** – Remote code execution over SMB.
+- **Netcat** – Backdoor and remote shell.
+- **PowerShell Empire** – Post-exploitation framework.
+- **Windows Credential Editor (WCE)** – Dump and replay passwords.
+- **ProcDump** – Dumping process memory.
+- **Keyloggers** – Logging keystrokes for password theft.
 
-Social Engineering
+---
 
-Tools: Hydra, Medusa, John the Ripper, Mimikatz
+## 🧪 Practical Steps
+### **Step 1: Gaining Access**
+- Exploit vulnerabilities in SMB, RDP, or other services.
+- Use phishing attacks to deliver payloads.
+- Apply password guessing or brute force.
 
-📌 Phase 2: Privilege Escalation
-Objective: Obtain elevated access (Admin/Root).
+### **Step 2: Privilege Escalation**
+- **Windows:** Use `whoami /priv` to check privileges.
+- Use `getsystem` in Meterpreter for SYSTEM privileges.
+- Run Local Exploit Suggester in Metasploit.
+- Manual UAC bypass techniques.
 
-Types:
+### **Step 3: Executing Applications**
+- Deploy a keylogger (`keyscan_start` in Meterpreter).
+- Execute remote commands with `shell` or `execute` in Meterpreter.
+- Drop and execute files.
 
-Vertical (User ➝ Admin)
+### **Step 4: Maintaining Access**
+- Create hidden accounts:  
+  `net user backdoor pass123 /add`  
+  `net localgroup administrators backdoor /add`
+- Set reverse shell persistence in registry.
 
-Horizontal (User ➝ Another User)
+### **Step 5: Clearing Tracks**
+- Clear Windows event logs:  
+  `wevtutil cl System`  
+  `wevtutil cl Security`
+- Remove dropped payloads and scripts.
 
-Techniques:
+---
 
-Exploiting misconfigured services
+## ⚠️ Common Attack Vectors
+- Exploiting unpatched vulnerabilities.
+- Weak or reused passwords.
+- Misconfigured file and folder permissions.
+- Default admin accounts with unchanged credentials.
+- Weak service configurations.
 
-Kernel exploits
+---
 
-DLL hijacking
+## 🛡️ Defensive Countermeasures
+- Regular patching and updates.
+- Enforce strong password policies.
+- Disable unnecessary services and ports.
+- Implement application whitelisting.
+- Enable logging and continuous monitoring.
+- Use endpoint detection and response (EDR) tools.
 
-Scheduled tasks abuse
+---
 
-Tools: PowerUp, Linux Exploit Suggester, WinPEAS
+## 📄 Reporting & Documentation
+When documenting a System Hacking assessment:
+- Provide exploited vulnerabilities and methods used.
+- List compromised accounts and privilege levels.
+- Include screenshots of exploitation and post-exploitation activities.
+- Recommend remediation steps.
 
-📌 Phase 3: Maintaining Access
-Objective: Keep long-term access.
+---
 
-Techniques:
-
-Backdoors
-
-Rootkits
-
-Creating hidden users
-
-Scheduled jobs
-
-Tools: Netcat, Metasploit, Ngrok, Web Shells
-
-📌 Phase 4: Clearing Tracks
-Objective: Erase all evidence of intrusion.
-
-Techniques:
-
-Clearing logs (Event Viewer, Syslog)
-
-Timestamp modification
-
-Disabling auditing
-
-Tools: Meterpreter, Auditpol, Winzapper
-
-🔸 3. Key Tools Used in System Hacking
-Tool	           Purpose
-1) Mimikatz ---	Password dumping & pass-the-hash.
-2) Cain & Abel ---	Cracking Windows passwords.
-3) Metasploit ---	Exploiting vulnerabilities.
-4) Netcat ---	Creating reverse shells/backdoors.
-5) Nmap ---	Discovering open ports/services.
-6) John the --- Ripper	Password brute force.
-7) PsExec ---	Remote code execution.
-
-🔸 4. Defensive Measures
-1) Technique	Description.
-2) Patch Management .
-3) Keep OS and software up-to-date.
-4) Account Lockout Policies.
-5) Prevent brute-force attacks.
-6) Multi-Factor Authentication.
-7) Hardens login process.
-8) IDS/IPS Systems	Detect intrusion.
-9) Event Log Monitoring	Detect unauthorized access.
+## ⚠️ Disclaimer
+This repository is for **educational and authorized penetration testing only**.  
+Performing these techniques without explicit permission is **illegal** and punishable by law. Always use a controlled lab environment.

@@ -59,7 +59,7 @@ Since most organizations rely heavily on web-based applications, attackers often
 
 --- 
 
-🛡️ Defensive Countermeasures
+## 🛡️ Defensive Countermeasures
 
 Input validation and sanitization.
 
@@ -75,14 +75,14 @@ Perform regular penetration testing.
 
 ---
 
-⚠️ Disclaimer
+## ⚠️ Disclaimer
 
 This repository is for educational purposes only.
 Do not attempt these attacks on unauthorized systems. Always work in a controlled lab environment with permission.
 
 ---
 
- 📄 README for **SQL Injection**  
+###  📄 README for **SQL Injection**  
 
 ---
 
@@ -156,7 +156,7 @@ It allows attackers to manipulate backend databases, extract sensitive data, byp
 
 ---
 
-🛡️ Defensive Countermeasures
+## 🛡️ Defensive Countermeasures
 
 Use prepared statements (parameterized queries).
 
@@ -170,7 +170,7 @@ Regular security testing with DAST & SAST tools.
 
 ---
 
-⚠️ Disclaimer
+## ⚠️ Disclaimer
 
 This repository is created for educational purposes only.
 Perform SQLi testing only on authorized systems within scope. Unauthorized attacks are illegal.

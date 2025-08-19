@@ -56,6 +56,9 @@ Since most organizations rely heavily on web-based applications, attackers often
 ### Lab 5: Command Injection Testing
 
     Try payloads like ; ls or && whoami in input fields.
+
+--- 
+
 🛡️ Defensive Countermeasures
 
 Input validation and sanitization.
@@ -70,17 +73,21 @@ Keep web servers, frameworks, and plugins up to date.
 
 Perform regular penetration testing.
 
+---
+
 ⚠️ Disclaimer
 
 This repository is for educational purposes only.
 Do not attempt these attacks on unauthorized systems. Always work in a controlled lab environment with permission.
 
+---
 
  📄 README for **SQL Injection**  
 
+---
 
 # 💉 SQL Injection (SQLi)
-
+---
 ## 📌 Introduction
 **SQL Injection** is one of the most dangerous web vulnerabilities where attackers inject malicious SQL queries into input fields.  
 It allows attackers to manipulate backend databases, extract sensitive data, bypass authentication, and even gain full system control.
@@ -147,6 +154,8 @@ It allows attackers to manipulate backend databases, extract sensitive data, byp
 
     sqlmap -u "http://target.com/login.php?id=1" --dbs
 
+---
+
 🛡️ Defensive Countermeasures
 
 Use prepared statements (parameterized queries).
@@ -158,6 +167,8 @@ Enforce least privilege for database accounts.
 Use Web Application Firewalls (WAFs).
 
 Regular security testing with DAST & SAST tools.
+
+---
 
 ⚠️ Disclaimer
 

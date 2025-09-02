@@ -1,0 +1,40 @@
+12/03/2025 
+
+footprinting 
+
+social media footprinting...
+
+website-: osint framework-social networks- facebook ,Instagram,linkdin and so all
+
+
+2. whois (cli )
+command -: whois domain name 
+eg whois Microsoft.com
+
+website- whois.com
+
+3. dns footprinting 
+info about dns server and all about Dns
+command (cli )-:dig ns domain name
+
+ns-net server 
+mx- main server
+A - for domain ip
+txt- for text
+SOA- ns server  and add 1 
+download dns cheat sheet
+website -: dns zone transfer-for clone website 
+command -: dig @ns.bluehost.com certifiedhacker.com "axfr"
+
+website(GUI)
+website-: kloth dns .com 
+
+
+Email footprinting -:
+APK -: GSA Email spider- 
+paste url (not every url )
+website -: https://emkei.cz/ for fake email sender
+website-: similar: https://emkei.cz/
+website -: related: https://emkei.cz/
+
+website -: mxtoolbox for email id original or fake

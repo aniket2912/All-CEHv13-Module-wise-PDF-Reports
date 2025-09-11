@@ -1,0 +1,30 @@
+TOOLS FOR SNIFFING --
+Active Sniffing --
+MAC FLOODING--
+1. MACOF (Kali)
+2. Scapy (kali)
+3. Hping3 (Kali)
+4. Ettercap (Kali)
+5. Bettercap (kali)
+
+DHCP Starvation --
+1. Yersinia (kali)
+2. DHCPig (kali)
+3. DHCPStrav (kali)
+
+ARP Poisoning 
+1. Cain and able (windows)
+2. XARP Application --Detection ARP Poisoning (Windows)
+3. Ettercap (kali)
+4. Bettercap (Kali)
+5. ARP Poisoning 
+
+MAC Spoofing 
+1. TMACv6 (Windows)
+2. Macchanger (kali)
+3. SMAC (Windows)
+4. Mac Address Changer (Windows)
+
+Passive Sniffing -- only capture and monitoring packets
+1. Wireshark
+2. TCP Dump

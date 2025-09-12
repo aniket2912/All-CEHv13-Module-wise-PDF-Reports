@@ -1,0 +1,21 @@
+BPS -- Bit Per Seconds
+RPS -- Request Per Seconds
+PPS -- Packet Per Seconds
+
+TOOLS FOR DOS/DDOS 
+1. Using Metasploit (Kali) -- search synflood (Auxilliary)
+2. Using Hping3 (kali)
+3. Raven-Storm (kali)
+4. Slowloris (Kali)
+5. GoldenEye (Kali)
+6. Macof 
+7. LOIC (Windows)
+8. HOIC (Windows)
+9. ISB -- I'm so Bored (windows)
+10. Dosinator (kali)
+11. Xerxes (kali) 
+
+prevention tools 
+1. HoneyBOT -:Anti DDOS Guardian (Windows Tool)
+2. Wireshark	
+3. Snort 
